@@ -86,11 +86,26 @@ ul li {
 /* viewport mobile */
 @media screen and (max-width: 800px) {
 
-  .fab{
+  .fab {
     transform: scale(1.2)!important;
   }
 
-  .fas{
+  .fas {
     transform: scale(1.2)!important;
+  }
+
+  .bg {
+      background-image : url("../img/bg3.jpg");
+      background-size : cover;
+      height : 100%;
+      overflow : hidden;
+
+  }
+
+  body {
+      height : 100%;
+      overflow : scroll;
+      -webkit-overflow-scrolling : touch;
+
   }
 }
