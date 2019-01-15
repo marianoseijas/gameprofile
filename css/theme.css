@@ -33,7 +33,7 @@ body {
   transform: translate(-50%, -50%);
 }
 
-img{
+.avatar{
   width: 100%;
   max-width: 170px;
   padding: 10px;
@@ -95,9 +95,6 @@ ul li {
   }
 
   body {
-    background-position:center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+    background-size:contain;
   }
 }
