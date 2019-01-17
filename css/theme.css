@@ -108,3 +108,23 @@ ul li {
 .fas{
   font-size: 1.8em!important;
 }
+
+.img-fluid{
+  -webkit-box-shadow: 5px 5px 11px 0px rgba(0,0,0,0.61)!important;
+  -moz-box-shadow: 5px 5px 11px 0px rgba(0,0,0,0.61)!important;
+  box-shadow: 5px 5px 11px 0px rgba(0,0,0,0.61)!important;
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+     /* IE10+ CSS styles go here */
+  main {
+       min-height: 100%!important;
+  }
+}
+
+@supports (-ms-accelerator:true) {
+  /* IE Edge 12+ CSS styles go here */
+  main {
+    min-height: 100%!important;
+  }
+}
