@@ -1,7 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
-
-}
-
 /*fluid typography*/
 html {
   font-size: 12px;
@@ -11,18 +7,34 @@ html {
     font-size: calc(12px + 6 * ((100vw - 320px) / 680));
   }
 }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1024px) {
   html {
     font-size: 14px;
   }
 }
 
-/*global style*/
+/*centered body*/
+html {
+	box-sizing:border-box;
+	display:flex;
+	justify-content:center;
+	user-select:none
+}
+*,*:before,*:after {
+	box-sizing:inherit
+}
+html,body {
+	height:100%
+}
 body {
   font-family: 'Open Sans'!important, sans-serif!important;
+	margin:0 1em;
+	padding:1em 0;
+	color:#fff;
+	display:flex;
 }
 
-/*dynamic background*/
+/*background image*/
 body::before {
   content: ' ';
   display: block;
@@ -39,19 +51,22 @@ body::before {
   z-index: -10; // This is pretty important
 }
 
-.layer {
+/*layer*/
+main {
+	margin:auto;
   background-color: rgba(0, 0, 0, 0.6)!important;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: auto !important;
+  min-height: 100%;
   z-index: 2!important;
 }
 
-/*centered*/
-.centered {
-  position: fixed;
+/*centered content*/
+.centered{
+  position: absolute;
   top: 50%;
   left: 50%;
   /* bring your own prefixes */
@@ -59,7 +74,11 @@ body::before {
 }
 
 /*custom css*/
-img{
+.default {
+  opacity: 0.7;
+}
+
+.avatar {
   width: 100%;
   max-width: 170px;
   padding: 10px;
@@ -74,15 +93,10 @@ h1,h2,h3,h4,h5,h6 {
 ul li {
   display: inline;
   list-style-type: none;
-  padding: 0.5rem;
+  padding: 0.5em;
 }
 
 .groups {
-  display: block!important;
-  list-style-type: none!important;
-}
-
-.profiles {
   display: block!important;
   list-style-type: none!important;
 }
