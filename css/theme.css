@@ -19,12 +19,13 @@ html {
 	box-sizing:border-box;
 	display:flex;
 	justify-content:center;
-	user-select:none;
+	user-select:none
 }
 
 *,*:before,*:after {
 	box-sizing:inherit
 }
+
 html,body {
 	height:100%
 }
@@ -36,12 +37,16 @@ body {
 	color:#fff;
 	display:flex;
 }
+
 /*background image*/
 body::before {
   content: ' ';
   display: block;
   background:linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url("../img/bg.jpg");
   background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
   height: 100vh;
   width: 100vw;
