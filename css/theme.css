@@ -131,6 +131,24 @@ iframe{
   box-shadow: 5px 5px 11px 0px rgba(0,0,0,0.61)!important;
 }
 
+.p-middle {
+  position: relative;
+}
+
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+@media only screen and (max-width: 1000px) {
+  .hide {
+    display: none;
+  }
+}
+
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
      /* IE10+ CSS styles go here */
   main {
