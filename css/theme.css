@@ -1,6 +1,7 @@
 /*fluid typography*/
 html {
   font-size: 12px;
+/*  text-shadow: 2px 2px black;*/
 }
 @media screen and (min-width: 320px) {
   html {
@@ -18,14 +19,16 @@ html {
 	box-sizing:border-box;
 	display:flex;
 	justify-content:center;
-	user-select:none
+	user-select:none;
 }
+
 *,*:before,*:after {
 	box-sizing:inherit
 }
 html,body {
 	height:100%
 }
+
 body {
   font-family: 'Open Sans'!important, sans-serif!important;
 	margin:0 1em;
@@ -33,12 +36,11 @@ body {
 	color:#fff;
 	display:flex;
 }
-
 /*background image*/
 body::before {
   content: ' ';
   display: block;
-  background-image: url("../img/bg.jpg")!important;
+  background:linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url("../img/bg.jpg");
   background-position: center;
   background-size: cover;
   height: 100vh;
@@ -54,19 +56,6 @@ body::before {
 /*layer*/
 main {
 	margin:auto;
-  padding: 3%;
-  background-color: rgba(0, 0, 0, 0.4)!important;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: auto !important;
-  min-height: 100%;
-  z-index: 2!important;
-}
-
-.home{
-
 }
 
 article{
@@ -81,15 +70,6 @@ article{
   width: 100%;
   max-width: 350px;
   border: 1px solid rgba(255, 255, 255, .3)!important;
-}
-
-/*centered content*/
-.centered{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  /* bring your own prefixes */
-  transform: translate(-50%, -50%);
 }
 
 /*custom css*/
