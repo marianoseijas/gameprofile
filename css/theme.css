@@ -70,6 +70,14 @@ article{
   max-width: 600px;
 }
 
+.links {
+  background-color: rgba(255, 255, 255, .1)!important;
+  margin: auto;
+  width: 100%;
+  max-width: 350px;
+  border: 1px solid rgba(255, 255, 255, .3)!important;
+}
+
 /*centered content*/
 .centered{
   position: absolute;
