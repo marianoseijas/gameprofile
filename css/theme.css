@@ -9,7 +9,7 @@ html {
 }
 @media screen and (min-width: 1024px) {
   html {
-    font-size: 14px;
+    font-size: 18px;
   }
 }
 
@@ -54,7 +54,8 @@ body::before {
 /*layer*/
 main {
 	margin:auto;
-  background-color: rgba(0, 0, 0, 0.6)!important;
+  padding: 3%;
+  background-color: rgba(0, 0, 0, 0.4)!important;
   position: absolute;
   top: 0;
   left: 0;
@@ -62,6 +63,10 @@ main {
   height: auto !important;
   min-height: 100%;
   z-index: 2!important;
+}
+
+.home{
+
 }
 
 article{
@@ -94,10 +99,16 @@ article{
 
 .avatar {
   width: 100%;
-  max-width: 170px;
+  max-width: 200px;
   padding: 10px;
   border: 1px solid rgba(255, 255, 255, .3)!important;
   border-radius: 50%;
+}
+
+@media only screen and (max-width: 600px) {
+  .avatar {
+    max-width: 150px!important;
+  }
 }
 
 h1,h2,h3,h4,h5,h6 {
