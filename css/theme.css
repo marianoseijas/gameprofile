@@ -61,7 +61,6 @@ body::before {
 /*layer*/
 main {
 	margin:auto;
-  padding: 5%;
 }
 
 article{
@@ -73,6 +72,7 @@ article{
 .links {
   background-color: rgba(255, 255, 255, .1)!important;
   margin: auto;
+  padding: 5%;
   width: 100%;
   max-width: 350px;
   border: 1px solid rgba(255, 255, 255, .3)!important;
