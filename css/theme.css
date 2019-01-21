@@ -41,7 +41,7 @@ body {
 body::before {
   content: ' ';
   display: block;
-  background:linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url("../img/bg.jpg");
+  background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url("../img/bg.jpg");
   background-position: center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -144,6 +144,12 @@ iframe{
 
 @media only screen and (max-width: 1000px) {
   .hide {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  div.hide-mobile {
     display: none;
   }
 }

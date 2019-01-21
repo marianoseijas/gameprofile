@@ -56,6 +56,21 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   <script type="text/javascript" src="js/functions.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <!-- TOGGLE -->
+  <script>
+  $(document).ready(function(){
+    $("button.a").click(function(){
+      $("div.gallery").toggle();
+    });
+  });
+  $(document).ready(function(){
+    $("button.b").click(function(){
+      $("div.top10").toggle();
+    });
+  });
+  </script>
 
   <!-- WIDGETBOT / CRATE -->
   <script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async defer>
@@ -114,84 +129,86 @@
       <!-- GALLERY -->
       <div class="container pb-5 mt-3">
         <h3 class="mb-5">Galería</h3>
-        <!--<button type="button" class="btn btn-outline-light mb-5 hide-btn" onclick="myFunction()">Ver/Ocultar</button>-->
-        <div class="row text-center text-lg-left">
-          <!-- img1 -->
-          <div class="text-center col-lg-3 col-md-4 col-xs-6">
-            <a href="#img1" class="d-block mb-4 h-100">
-              <img src="rc-img/default.jpg" class="img-fluid default hvr-shrink">
-            </a>
-            <a href="#_" class="lightbox" id="img1">
-              <img src="rc-img/default.jpg">
-            </a>
+        <button type="button" class="a btn btn-outline-light mb-5 d-sm-none">Ver/Ocultar Galería</button>
+          <div class="row text-center text-lg-left gallery hide-mobile">
+            <!-- img1 -->
+            <div class="text-center col-lg-3 col-md-4 col-xs-6">
+              <a href="#img1" class="d-block mb-4 h-100">
+                <img src="rc-img/default.jpg" class="img-fluid default hvr-shrink">
+              </a>
+              <a href="#_" class="lightbox" id="img1">
+                <img src="rc-img/default.jpg">
+              </a>
+            </div>
+            <!-- img1 -->
+            <div class="text-center col-lg-3 col-md-4 col-xs-6">
+              <a href="#img1" class="d-block mb-4 h-100">
+                <img src="rc-img/default.jpg" class="img-fluid default hvr-shrink">
+              </a>
+              <a href="#_" class="lightbox" id="img1">
+                <img src="rc-img/default.jpg">
+              </a>
+            </div>
+            <!-- img1 -->
+            <div class="text-center col-lg-3 col-md-4 col-xs-6">
+              <a href="#img1" class="d-block mb-4 h-100">
+                <img src="rc-img/default.jpg" class="img-fluid default hvr-shrink">
+              </a>
+              <a href="#_" class="lightbox" id="img1">
+                <img src="rc-img/default.jpg">
+              </a>
+            </div>
+            <!-- img1 -->
+            <div class="text-center col-lg-3 col-md-4 col-xs-6">
+              <a href="#img1" class="d-block mb-4 h-100">
+                <img src="rc-img/default.jpg" class="img-fluid default hvr-shrink">
+              </a>
+              <a href="#_" class="lightbox" id="img1">
+                <img src="rc-img/default.jpg">
+              </a>
+            </div>
+            <!-- img1 -->
+            <div class="text-center col-lg-3 col-md-4 col-xs-6">
+              <a href="#img1" class="d-block mb-4 h-100">
+                <img src="rc-img/default.jpg" class="img-fluid default hvr-shrink">
+              </a>
+              <a href="#_" class="lightbox" id="img1">
+                <img src="rc-img/default.jpg">
+              </a>
+            </div>
+            <!-- img1 -->
+            <div class="text-center col-lg-3 col-md-4 col-xs-6">
+              <a href="#img1" class="d-block mb-4 h-100">
+                <img src="rc-img/default.jpg" class="img-fluid default hvr-shrink">
+              </a>
+              <a href="#_" class="lightbox" id="img1">
+                <img src="rc-img/default.jpg">
+              </a>
+            </div>
+            <!-- img1 -->
+            <div class="text-center col-lg-3 col-md-4 col-xs-6">
+              <a href="#img1" class="d-block mb-4 h-100">
+                <img src="rc-img/default.jpg" class="img-fluid default hvr-shrink">
+              </a>
+              <a href="#_" class="lightbox" id="img1">
+                <img src="rc-img/default.jpg">
+              </a>
+            </div>
+            <!-- img1 -->
+            <div class="text-center col-lg-3 col-md-4 col-xs-6">
+              <a href="#img1" class="d-block mb-4 h-100">
+                <img src="rc-img/default.jpg" class="img-fluid default hvr-shrink">
+              </a>
+              <a href="#_" class="lightbox" id="img1">
+                <img src="rc-img/default.jpg">
+              </a>
+            </div>
           </div>
-          <!-- img1 -->
-          <div class="text-center col-lg-3 col-md-4 col-xs-6">
-            <a href="#img1" class="d-block mb-4 h-100">
-              <img src="rc-img/default.jpg" class="img-fluid default hvr-shrink">
-            </a>
-            <a href="#_" class="lightbox" id="img1">
-              <img src="rc-img/default.jpg">
-            </a>
-          </div>
-          <!-- img1 -->
-          <div class="text-center col-lg-3 col-md-4 col-xs-6">
-            <a href="#img1" class="d-block mb-4 h-100">
-              <img src="rc-img/default.jpg" class="img-fluid default hvr-shrink">
-            </a>
-            <a href="#_" class="lightbox" id="img1">
-              <img src="rc-img/default.jpg">
-            </a>
-          </div>
-          <!-- img1 -->
-          <div class="text-center col-lg-3 col-md-4 col-xs-6">
-            <a href="#img1" class="d-block mb-4 h-100">
-              <img src="rc-img/default.jpg" class="img-fluid default hvr-shrink">
-            </a>
-            <a href="#_" class="lightbox" id="img1">
-              <img src="rc-img/default.jpg">
-            </a>
-          </div>
-          <!-- img1 -->
-          <div class="text-center col-lg-3 col-md-4 col-xs-6">
-            <a href="#img1" class="d-block mb-4 h-100">
-              <img src="rc-img/default.jpg" class="img-fluid default hvr-shrink">
-            </a>
-            <a href="#_" class="lightbox" id="img1">
-              <img src="rc-img/default.jpg">
-            </a>
-          </div>
-          <!-- img1 -->
-          <div class="text-center col-lg-3 col-md-4 col-xs-6">
-            <a href="#img1" class="d-block mb-4 h-100">
-              <img src="rc-img/default.jpg" class="img-fluid default hvr-shrink">
-            </a>
-            <a href="#_" class="lightbox" id="img1">
-              <img src="rc-img/default.jpg">
-            </a>
-          </div>
-          <!-- img1 -->
-          <div class="text-center col-lg-3 col-md-4 col-xs-6">
-            <a href="#img1" class="d-block mb-4 h-100">
-              <img src="rc-img/default.jpg" class="img-fluid default hvr-shrink">
-            </a>
-            <a href="#_" class="lightbox" id="img1">
-              <img src="rc-img/default.jpg">
-            </a>
-          </div>
-          <!-- img1 -->
-          <div class="text-center col-lg-3 col-md-4 col-xs-6">
-            <a href="#img1" class="d-block mb-4 h-100">
-              <img src="rc-img/default.jpg" class="img-fluid default hvr-shrink">
-            </a>
-            <a href="#_" class="lightbox" id="img1">
-              <img src="rc-img/default.jpg">
-            </a>
-          </div>
-        </div>
+
         <!-- TOP10 -->
         <h3 class="mt-5 mb-5">Top 10 (Kill Screens)</h3>
-        <div class="row text-center text-lg-left">
+        <button type="button" class="b btn btn-outline-light mb-5 d-sm-none">Ver/Ocultar Galería</button>
+        <div class="row text-center text-lg-left top10 hide-mobile">
           <!-- img1 -->
           <div class="text-center col-lg-3 col-md-4 col-xs-6">
             <a href="#img1" class="d-block mb-4 h-100">
