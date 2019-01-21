@@ -83,7 +83,7 @@
 
 </head>
 <!-- START -->
-<body>
+<body onload="aleatorio()">
   <main>
     <!-- HEADER -->
     <div class="text-center text-light">
@@ -95,14 +95,14 @@
           Research Commission es una comunidad de MONSTER HUNTER: WORLD de habla hispana que se conforma por cazadores e investigadores de todo el mundo.
         </p>
       </article>
-      <!-- LINKS -->
+    <!-- LINKS -->
       <div class="links rounded mt-5 pt-3">
         <ul class="list-inline text-center">
           <li><a href="https://mhw.page.link/rcmhw-steam" target="_blank" title="Research Commission [MHW]: Steam Group" class="text-light"><span style="white-space: nowrap;"><i class="fab fa-steam-symbol fa-lg groups-icon mr-3 text-light"></i>Grupo de Steam</span></a></li>
           <li><a href="https://mhw.page.link/rcmhw-discord" target="_blank" title="Research Commission [MHW]: Discord" class="text-light"><span style="white-space: nowrap;"><i class="fab fa-discord  fa-lg groups-icon mr-3 text-light"></i>Discord</span></a></li>
         </ul>
       </div>
-      <!-- WIDGETBOT -->
+    <!-- WIDGETBOT -->
       <div class="container pb-5 mt-3">
         <div class="row p-middle">
           <div class="text-left col-lg-5 mt-5 hide">
@@ -126,10 +126,10 @@
           </div>
         </div>
       </div>
-      <!-- GALLERY -->
+    <!-- GALLERY -->
       <div class="container pb-5 mt-3">
         <h3 class="mb-5">Galería</h3>
-        <button type="button" class="a btn btn-outline-light mb-5 d-sm-none">Ver/Ocultar Galería</button>
+        <button type="button" class="a btn btn-outline-light mb-5 d-sm-none">Ver/Ocultar Imágenes</button>
           <div class="row text-center text-lg-left gallery hide-mobile">
             <!-- img1 -->
             <div class="text-center col-lg-3 col-md-4 col-xs-6">
@@ -207,7 +207,7 @@
 
         <!-- TOP10 -->
         <h3 class="mt-5 mb-5">Top 10 (Kill Screens)</h3>
-        <button type="button" class="b btn btn-outline-light mb-5 d-sm-none">Ver/Ocultar Galería</button>
+        <button type="button" class="b btn btn-outline-light mb-5 d-sm-none">Ver/Ocultar Imágenes</button>
         <div class="row text-center text-lg-left top10 hide-mobile">
           <!-- img1 -->
           <div class="text-center col-lg-3 col-md-4 col-xs-6">
@@ -303,14 +303,17 @@
 
       </div>
     </div>
+    <div class="text-center">
+      <img src="../rc-img/loading.png" name="imagen" class="random" alt="random mhw picture" />
+    </div>
     <!-- FOOTER -->
     <footer class="text-center text-light m-5">
       <p>Developed by <a href="https://www.mirasein.me" target="_blank" class="text-light">Mirasein<a/> © 2019</p>
-      </footer>
-    </main>
+    </footer>
+  </main>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-  </body>
-  </html>
+</body>
+</html>
