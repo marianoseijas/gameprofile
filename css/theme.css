@@ -177,6 +177,10 @@ iframe{
   }
 }
 
+a, u {
+    text-decoration: none!important;
+}
+
 /** LIGHTBOX MARKUP **/
 
 .thumbnail {
