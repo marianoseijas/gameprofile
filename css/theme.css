@@ -95,6 +95,11 @@ article{
   border-radius: 50%;
 }
 
+.logo{
+  width: 100%;
+  max-width: 500px;
+}
+
 @media only screen and (max-width: 600px) {
   .avatar {
     max-width: 150px!important;
