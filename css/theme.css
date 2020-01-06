@@ -41,7 +41,7 @@ body {
 body::before {
   content: ' ';
   display: block;
-  background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url("../img/bg.jpg");
+  background:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url("../img/bg-01.jpg");
   background-position: center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -54,7 +54,7 @@ body::before {
   left: 0;
   right: 0;
   position: fixed;
-  z-index: -10; // This is pretty important
+  z-index: -10;
 }
 
 /*layer*/
@@ -82,9 +82,9 @@ article{
   opacity: 0.7;
 }
 
-.random{
+.logos{
   width: 100%;
-  max-width: 300px;
+  max-width: 320px;
 }
 
 .avatar {
