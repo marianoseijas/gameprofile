@@ -26,7 +26,8 @@ html {
 }
 
 html,body {
-	height:100%
+	height:100%;
+  text-shadow: 0 0 10px black;
 }
 
 body {
@@ -72,7 +73,7 @@ body::before {
 body::after{
   content: ' ';
   display: block;
-  background-image: radial-gradient(black 65%, transparent 65%);
+  background-image: radial-gradient(black 50%, transparent 80%);
   background-size: 3px 3px;
   height: 100vh;
   width: 100vw;
