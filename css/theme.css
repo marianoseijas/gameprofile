@@ -198,6 +198,7 @@ iframe{
 .svg{
  width: 100%!important;
  max-width: 32px!important;
+ text-shadow: 0 0 5px black;
 }
 
 @media only screen and (max-width: 1000px) {
