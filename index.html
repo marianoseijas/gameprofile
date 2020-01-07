@@ -76,6 +76,16 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
+  <!-- RANDOM BACKGROUND -->
+
+  <script type="text/javascript">
+   var bgcount = 7;
+   function changebg() {
+   var num =  Math.ceil( Math.random() * bgcount );
+   document.body.background = 'rc-img/'+num+'.jpg';
+   }
+   </script>
+
 </head>
 <!-- START -->
 <body>
@@ -106,5 +116,11 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 
   <script src="https://www.gstatic.com/firebasejs/5.8.3/firebase.js"></script>
+
+  <!-- RANDOM BACKGROUND -->
+  <script type="text/javascript">
+  changebg();
+  </script>
+
 </body>
 </html>
