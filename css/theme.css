@@ -74,6 +74,7 @@ body::after{
   content: ' ';
   display: block;
   background-image: radial-gradient(black 50%, transparent 80%);
+  background-image:-moz-radial-gradient(black 60%, transparent 80%);
   background-size: 3px 3px;
   height: 100vh;
   width: 100vw;
