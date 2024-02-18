@@ -13,7 +13,6 @@ html {
   }
 }
 
-
 /*centered body*/
 html {
 	box-sizing:border-box;
@@ -126,6 +125,11 @@ article{
   border-radius: 50%;
 }
 
+.hxh {
+  width: 100%;
+  max-width: 130px;
+}
+
 .logo{
   width: 100%;
   max-width: 500px;
@@ -137,22 +141,26 @@ article{
   z-index:2;
 }
 
+/** BUBBLE CHATBOX **/
 .bubble{
-  background-image: url("img/bubble-chat.png");
-  height: 600px;
-  width: 281px;
+  background-color: rgba(0, 0, 0, .3);
 }
+
 
 @media only screen and (360px <= width <= 764px) {
   .avatar {
     max-width: 180px!important;
+  }
+  .hxh {
+    width: 100%;
+    max-width: 100px;
   }
   body::after{
     content: ' ';
     display: block;
     background-image: radial-gradient(black 50%, transparent 80%);
     background-image:-moz-radial-gradient(black 60%, transparent 80%);
-    background-size: 5px 5px;
+    background-size: 4px 4px;
     height: 100vh;
     width: 100vw;
     top: 0;
