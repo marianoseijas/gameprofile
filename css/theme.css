@@ -144,6 +144,12 @@ article{
 /** BUBBLE CHATBOX **/
 .bubble{
   background-color: rgba(0, 0, 0, .3);
+  /** BUBBLE CHATBOX BORDERS
+  border-left: 2px solid rgba(95, 205, 228, .5);
+  border-right: 2px solid rgba(95, 205, 228, .5);
+  border-top: 10px solid rgba(95, 205, 228, .5);
+  border-bottom: 10px solid rgba(95, 205, 228, .5);
+  **/
 }
 
 
