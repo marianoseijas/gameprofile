@@ -20,17 +20,8 @@
 
 /*fluid typography*/
 html {
-  font-size: 12px;
-}
-@media screen and (min-width: 320px) {
-  html {
-    font-size: calc(12px + 6 * ((100vw - 320px) / 680));
-  }
-}
-@media screen and (min-width: 1024px) {
-  html {
-    font-size: 14px;
-  }
+  font-size: clamp(0.75rem, 0.231vw + 0.69rem, 0.875rem);
+  line-height: clamp(1.125rem, 0.023vw + 1.119rem, 1.138rem);
 }
 
 /*centered body*/
